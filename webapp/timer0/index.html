@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" href="https://bcan.kro.kr/bcan.png" type="image/png">
+<title>Timer</title>
+<script language="JavaScript">
+		var SetTime = 10000;		
+		function msg_time() {							ms = Math.floor(SetTime % 60) + "";
+var msg = "<h2><font color='blue'>" + ms + "</font></h2>";
+document.all.ViewTimer.innerHTML = msg;
+SetTime--;	
+	if (SetTime < 0) {											clearInterval(tid);						
+			}
+}
+		window.onload = function TimerStart(){ tid=setInterval('msg_time()',100) };
+</script>
+</head>
+<body>
+<center>
+<div id="ViewTimer"></div>
+</center>
+</body>
+</html>

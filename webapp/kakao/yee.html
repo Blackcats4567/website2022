@@ -1,0 +1,54 @@
+  
+<html>
+<head>
+	<title>카카오톡</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+	<p>Custom</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('545f2f6b183dd35c32fc865c5607abc6');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '자기소개서',
+        description: '자기소개서 쓰다보면 이지경까지 될 수 있으니 주의',
+        imageUrl:
+          'https://storage.googleapis.com/jjalbot-jjals/2018/12/SyNTe0EfeV/20161011_57fc9723775d3.gif',
+        link: {
+          mobileWebUrl: 'http://school.gyo6.net/gsshs/0501/board/29455/196844286?page=1&searchType=S',
+          webUrl: 'http://school.gyo6.net/gsshs/0501/board/29455/196844286?page=1&searchType=S',
+        },
+      },
+      social: {
+        likeCount: 99999,
+        commentCount: 99999,
+        sharedCount: 99999,
+      },
+      buttons: [
+        {
+          title: '제발 살려줘...',
+          link: {
+            mobileWebUrl: 'http://school.gyo6.net/gsshs/0501/board/29455/196844286?page=1&searchType=S',
+            webUrl: 'http://school.gyo6.net/gsshs/0501/board/29455/196844286?page=1&searchType=S',
+          },
+        },
+{
+          title: '여러분 제발 살려주세요',
+          link: {
+            mobileWebUrl: 'http://school.gyo6.net/gsshs/0501/board/29455/196844286?page=1&searchType=S',
+            webUrl: 'http://school.gyo6.net/gsshs/0501/board/29455/196844286?page=1&searchType=S',
+          },
+        },
+      ],
+    })
+  }
+</script>
+  </body>
+</html>

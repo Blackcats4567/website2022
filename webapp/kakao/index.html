@@ -1,0 +1,47 @@
+  
+<html>
+<head>
+	<title>카카오톡</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+	<p>Blackcats4567 오픈채팅방 링크 공유하기</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('d642006f2ee698ec7291160eacab0c2c');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: 'Blackcats4567 오픈채팅방',
+        description: '마인크래프트 더하이브&하이픽셀에 대해 대화하고 끝말잇기 봇으로 놀 수 있는 방입니다!',
+        imageUrl:
+          'https://www.blackcats4567.com/assets/images/blackcats4567-96x96.png',
+        link: {
+          mobileWebUrl: 'https://open.kakao.com/o/gWSPmMWc',
+          webUrl: 'https://open.kakao.com/o/gWSPmMWc',
+        },
+      },
+      social: {
+        likeCount: 99999,
+        commentCount: 99999,
+        sharedCount: 99999,
+      },
+      buttons: [
+        {
+          title: '참여하기',
+          link: {
+            mobileWebUrl: 'https://open.kakao.com/o/gWSPmMWc',
+            webUrl: 'https://open.kakao.com/o/gWSPmMWc',
+          },
+        },
+      ],
+    })
+  }
+</script>
+  </body>
+</html>
