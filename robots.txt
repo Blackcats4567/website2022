@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /games/id/
+Disallow: /webapp/kakao/
+Allow: /
+Sitemap: https://www.blackcats4567.com/sitemap.xml
