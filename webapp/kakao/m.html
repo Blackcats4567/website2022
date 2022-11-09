@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+	<title>카카오톡</title><script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+</head>
+
+<body>
+
+	<p>Custom</p>
+
+<a id="kakao-link-btn" href="javascript:sendLink()">
+
+  <img
+
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+
+  />
+
+</a>
+
+<script type="text/javascript">
+
+ Kakao.init('545f2f6b183dd35c32fc865c5607abc6');
+
+  function sendLink() {
+
+    Kakao.Link.sendDefault({
+
+      objectType: 'feed',
+
+      content: {
+
+        title: '음악 감상 수행 준비 자료',
+
+        description: '선착순 1명에게 제공됩니다.',
+
+        imageUrl:
+
+          'https://www.kyongbuk.co.kr/news/photo/202108/2081923_507936_3901.jpg',
+
+        link: {
+
+          mobileWebUrl: 'http://naver.me/GsOlWzro',
+
+          webUrl: 'http://naver.me/GsOlWzro',
+
+        },
+
+      },
+
+    
+     
+
+      buttons: [
+
+        {
+
+          title: '지금 받으러 가기',
+
+          link: {
+
+            mobileWebUrl: 'http://naver.me/GsOlWzro',
+
+            webUrl: 'http://naver.me/GsOlWzro',
+
+          },
+
+        },
+
+
+      ],
+
+    })
+
+  }
+
+</script>
+
+  </body>
+
+</html>
